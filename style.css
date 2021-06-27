@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+#slide-img{
+    width: 100%;
+    height: 100vh;
+    animation: zoom 3.5s linear infinite;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    15%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3)
+    }
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    top: 0;
+    position: absolute;
+}
+.navbar{
+    width: 90%;
+    display:flex;
+    align-items: center;
+    margin: 15px; 
+}
+.logo{
+    flex-basis: 15%;
+}
+.logo img{
+    width: 150px;
+    cursor: pointer;
+}
+.menu-icons{
+    flex: 1;
+    text-align: right; 
+    flex-basis: 25%;
+}
+.menu-icons img{
+    width: 40px;
+    position: relative;
+    margin-left: 40px;
+}
+.content{
+    width: 60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color:rgba(212, 225, 226, 0.616);
+}
+.content h1{
+    font-size: 30px;
+}
+.content h3{
+    width: 90%;
+    margin: 20px auto 100px;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #d34b29;
+    background: #ca4827 ;
+    color: rgb(238, 232, 232);
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #d34b29;
+}
+.btn-2{
+    border: 2px solid #d34b29;
+    background: transparent;
+}
+.btn-2:hover{
+    border: 2px solid #d34b29;
+     background: #d34b29;
+}
